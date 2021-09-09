@@ -7,4 +7,3 @@ if __name__ == "__main__":
     if argc:
         for i in range(argc):
             print('{:d}: {}'.format(i + 1, argv[i + 1]))
-            
