@@ -15,4 +15,3 @@ if __name__ == "__main__":
                                      sub(a, b) if argv[2] == '-' else
                                      mul(a, b) if argv[2] == '*' else
                                      div(a, b)))
-
