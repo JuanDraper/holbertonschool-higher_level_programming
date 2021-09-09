@@ -5,12 +5,9 @@ if _name_ == "_main_":
 
     if len(argv) != 4:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
-<<<<<<< HEAD
     argc = len(argv)
     if argc != 4:
         print('Usage: ./100-my_calculator.py <a> <operator> <b>\n')
-=======
->>>>>>> af4dc53e906dde023331507454e8eb4c0276a126
         exit(1)
     if argv[2] != '+' and argv[2] != '-' and argv[2] != '*' and argv[2] != '/':
         print("Unknown operator. Available operators: +, -, * and /")
