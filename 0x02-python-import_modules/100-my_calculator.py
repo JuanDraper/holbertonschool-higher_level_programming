@@ -2,7 +2,6 @@
 if _name_ == "_main_":
     from sys import argv
     from calculator_1 import add, sub, mul, div
-
     if len(argv) != 4:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
     argc = len(argv)
