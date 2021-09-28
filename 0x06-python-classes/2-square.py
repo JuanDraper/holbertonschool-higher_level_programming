@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/isr/bin/python3
 """  
     blablalblalbla
     return {}
@@ -7,7 +7,7 @@
 
 class Square:
     """
-	bllbalblalbal
+        bllbalblalbal
     """
     def __init__(self, size=0):
         """blblal."""
