@@ -1,6 +1,16 @@
 #!/usr/bin/python3
+"""
+    blabllablalblalbal
+    return {}
+"""
+
+
+
+
 class Square:
-    """Square class"""
+    """
+    blablalbla
+    """
 
     def __init__(self, size):
         self.__size = size
