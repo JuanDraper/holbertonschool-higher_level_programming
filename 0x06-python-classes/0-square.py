@@ -8,6 +8,6 @@
 
 class Square:
     """
-        blalbalblalbla       
+        blalbalblalbl
     """
     pass
