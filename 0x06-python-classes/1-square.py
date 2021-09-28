@@ -5,8 +5,6 @@
 """
 
 
-
-
 class Square:
     """
     blablalbla
