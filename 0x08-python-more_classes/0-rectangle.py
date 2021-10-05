@@ -1,6 +1,9 @@
-#!usr/bin/python3
-"""blabllablalblal
+#!/usr/bin/python3
+"""blabla
 """
-class rectangle:
-    """blablalbla"""
+
+
+class Rectangle:
+    """blaba
+    """
     pass
