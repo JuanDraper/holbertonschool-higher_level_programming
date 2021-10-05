@@ -19,7 +19,7 @@ class Rectangle:
         self.__width = width
         self.__height = height
 
-    @property
+    @property   
     def width(self):
         """blablal"""
         return self.__width
@@ -63,4 +63,4 @@ class Rectangle:
 
     def __repr__(self):
         return "Rectangle(" + str(self.__width) + ", " + str(self.__height)\
-                + ")" 
+                + ")"
