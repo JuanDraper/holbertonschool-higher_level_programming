@@ -4,5 +4,6 @@
 
 
 def lookout(obj):
-    """will return a list of methods and attributes"""
-    return dir(obj)
+   """will return a list of methods and attributes"""
+   list = dir(obj)
+   return list
