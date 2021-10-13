@@ -1,5 +1,9 @@
 #!/usr/bin/python3
+"""module with pascal triangle"""
+
+
 def pascal_triangle(n):
+    """pascal"""
     if n <= 0:
         return []
     pasc = [[1]]
