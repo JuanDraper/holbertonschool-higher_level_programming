@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 """module containing the Base"""
 import json
+import csv
+
+
 class Base:
     """
     Base class 
@@ -55,5 +58,46 @@ class Base:
 
     @classmethod
     def load_from_file(cls):
+        """returns a list of instances"""
+        try:
+            with open(cls.__name__ + ".json", "r") as i:
+                e = cls.from_json_string(i.read())
+                new = []
+                for j in e:
+                    new.append(cls.create(**j))
+                return new
+        except FileNotFoundError:
+            return []
+
+
+    @classmethod
+    def save_to_file_csv(cls, list_objs):
+        """saves to a .csv file"""
+        with open(cls.__name__ + ".csv", "w") as f:
+            ld = list()
+            for item in list_objs:
+                ld.append(item.to_dictionary())
+            if cls.__name__ == "Rectangle":
+                fn = ["id", "width", "height", "x", "y"]
+            else:
+                fn = ["id", "size", "x", "y"]
+            writer = csv.DictWriter(f, fn)
+            writer.writeheader()
+            writer.writerows(ld)
+
+    @classmethod
+    def load_from_file_csv(cls):
+        """loads from a .csv file"""
+        a = []
+        with open(cls.__name__ + ".csv", "r") as f:
+            reader = csv.DictReader(f)
+            for l in reader:
+                ka = dict(l)
+                for k, v in ka.items():
+                    ka[k] = int(v)
+                a.append(cls.create(**ka))
+            return a
+
+
 
 
