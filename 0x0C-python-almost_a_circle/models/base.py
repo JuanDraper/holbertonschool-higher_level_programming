@@ -52,7 +52,7 @@ class Base:
         if cls.__name__ == "Rectangle":
             o = cls(1, 1)
         elif cls.__name__ == "Square":
-                o = cls(1)
+            o = cls(1)
         o.update(**dictionary)
         return o
 
