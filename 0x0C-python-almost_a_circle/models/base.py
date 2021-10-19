@@ -6,7 +6,7 @@ import csv
 
 class Base:
     """
-    Base class 
+    Base class
     """
     __nb_objects = 0
 
@@ -19,11 +19,11 @@ class Base:
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
-    
+
     @staticmethod
     def to_json_string(list_dictionaries):
         """Json of a list of dictionarries"""
-        if list_dictionaries is None or list_dictionaries  == []:
+        if list_dictionaries is None or list_dictionaries == []:
             return "[]"
         return json.dumps(list_dictionaries)
 
@@ -69,7 +69,6 @@ class Base:
         except FileNotFoundError:
             return []
 
-
     @classmethod
     def save_to_file_csv(cls, list_objs):
         """saves to a .csv file"""
@@ -91,13 +90,9 @@ class Base:
         a = []
         with open(cls.__name__ + ".csv", "r") as f:
             reader = csv.DictReader(f)
-            for l in reader:
-                ka = dict(l)
+            for li in reader:
+                ka = dict(li)
                 for k, v in ka.items():
                     ka[k] = int(v)
                 a.append(cls.create(**ka))
             return a
-
-
-
-
