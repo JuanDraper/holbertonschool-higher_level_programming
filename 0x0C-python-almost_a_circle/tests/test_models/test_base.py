@@ -11,9 +11,9 @@ from_json_string = Base.from_json_string
 create = Base.create
 load_from_file = Base.load_from_file
  """
+
+
 class TestBase(unittest.TestCase):
-
-
 
     def doc_test(self):
         """tests the documantattion"""
@@ -189,7 +189,7 @@ class TestBase(unittest.TestCase):
             self.assertDictEqual(s1.to_dictionary(), my_list[0])
 
     def CreateRectangleTest(self):
-        ""new rectangle"""
+        """new rectangle"""
         Base._Base__nb_objects = 0
         r1 = Rectangle(3, 5, 1)
         r1_dictionary = r1.to_dictionary()
