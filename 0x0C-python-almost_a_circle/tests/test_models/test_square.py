@@ -107,4 +107,4 @@ class TestSquare(unittest.TestCase):
         """to_dictionary function with argument. """
         s = Square(2)
         with self.assertRaises(TypeError):
-            s.to_dictionary(1) 
+            s.to_dictionary(1)
