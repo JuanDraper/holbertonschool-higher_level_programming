@@ -20,7 +20,7 @@ class Square(Rectangle):
         """
         String representation of the square.
         """
-        return "[Square] (" + str(self.id) + ") " + "/" +\
+        return "[Square] (" + str(self.id) + ") " + str(self.x) + "/" +\
                str(self.y) + " - " + str(self.width)
 
     @property
