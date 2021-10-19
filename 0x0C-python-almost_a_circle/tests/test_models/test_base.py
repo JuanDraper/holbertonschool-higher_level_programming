@@ -71,4 +71,3 @@ class TestBase(unittest.TestCase):
             os.remove("Rectangle.csv")
         r.save_to_file_csv([])
         self.assertTrue(os.path.isfile("Rectangle.csv"))
-                                                
