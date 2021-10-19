@@ -31,7 +31,7 @@ class Rectangle(Base):
         self.__y = y
         super().__init__(id)
 
-    @property		
+    @property
     def width(self):
         """Width of the rectangle"""
         return self.__width
@@ -71,8 +71,7 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError("x must be >= 0")
         self.__x = value
-  
-    
+
     @property
     def y(self):
         """Y coordinate of the rectangle.    """
@@ -85,11 +84,10 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError("y must be >= 0")
         self.__y = value
-    
-    def area(self):
-       """Function that returns the area of a rectangle"""
-       return self.__width * self.__height
 
+    def area(self):
+        """Function that returns the area of a rectangle"""
+        return self.__width * self.__height
 
     def display(self):
         """Function that displays a rectangle using # """
@@ -102,8 +100,8 @@ class Rectangle(Base):
         String representation of the rectangle.
         """
         return "[Rectangle] (" + str(self.id) + ") " + str(self.__x) + "/" +\
-                str(self.__y) + " - " + str(self.__width) + "/" +\
-                str(self.__height)
+               str(self.__y) + " - " + str(self.__width) + "/" +\
+               str(self.__height)
 
     def update(self, *args, **kwargs):
         """
@@ -131,7 +129,6 @@ class Rectangle(Base):
                 elif key == "y":
                     self.y = value
 
-
     def to_dictionary(self):
         """
         Function that returns the dictionary representation of a rectangle.
@@ -139,4 +136,4 @@ class Rectangle(Base):
         new = dict()
         for key in self.__dict__.keys():
             new[key.split("_")[-1]] = self.__dict__[key]
-        return new 
+        return new

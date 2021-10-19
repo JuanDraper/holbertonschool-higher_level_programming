@@ -69,5 +69,5 @@ class Square(Rectangle):
             if key in ["_Rectangle__height", "_Rectangle__width"]:
                 new["size"] = self.__dict__[key]
                 continue
-            new[key.split("_")[-1]] =self.__dict__[key]
+            new[key.split("_")[-1]] = self.__dict__[key]
         return new
