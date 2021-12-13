@@ -1,4 +1,6 @@
 #!/usr/bin/node
+/* finding the second biggest
+*/
 if (!process.argv[2] || !process.argv[3]) {
   console.log(0);
 } else {
