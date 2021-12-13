@@ -3,6 +3,6 @@
 */
 const stringArray = ['C is fun', 'Python is cool', 'Javascript is amazing'];
 let i = 0;
-for (i; i < stringArray.length; i++) {
+for (i; stringArray[i]; i++) {
   console.log(stringArray[i]);
 }
