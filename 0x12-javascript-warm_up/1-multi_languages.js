@@ -2,4 +2,4 @@
 /*
 my second js
 */
-console.log('C is fun\nPython is cool\nJavaScript is amazing')
+console.log('C is fun\nPython is cool\nJavaScript is amazing');
