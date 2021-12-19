@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# script to fetch things from a db
+# Lists all states from the database 
 import MySQLdb
 import sys
 if __name__ == "__main__":
