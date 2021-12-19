@@ -10,7 +10,7 @@ if __name__ == "__main__":
                             passwd=sys.argv[2], db=sys.argv[3])
     cr = dbase.cursor()
     cr.execute("SELECT * FROM states ORDER BY id;")
-    rt = cur.fetchall()
+    rt = cr.fetchall()
     for row in rt:
         if row[1].startswith("N"):
             print(row)
