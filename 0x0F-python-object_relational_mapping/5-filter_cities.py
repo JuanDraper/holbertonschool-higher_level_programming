@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""T name of state  argument  lists  cities of  state & safe"""
+""" name of state  argument  lists  cities of  state & safe"""
 import MySQLdb
 import sys
 if __name__ == "__main__":
