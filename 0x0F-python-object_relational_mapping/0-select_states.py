@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-##script to fetch things from a db
+# script to fetch things from a db
 import MySQLdb
 import sys
 if __name__ == "__main__":
